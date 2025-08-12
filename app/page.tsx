@@ -65,76 +65,6 @@ export default function StudioWebsite() {
           <div className="flex items-center justify-between">
             <div className="flex items-center">
               <img
-                src="/lumeya%27s%20logo.png"
-                alt="Lumeya Logo"
-                className="h-10 w-auto"
-              />
-            </div>
-            <div className="hidden md:flex space-x-8">
-              <a
-                href="#home"
-                className="hover:text-[#df0139] transition-colors duration-300 font-medium text-[#1e1e27]"
-              >
-                Home
-              </a>
-              <a
-                href="#about"
-                className="hover:text-[#df0139] transition-colors duration-300 font-medium text-[#1e1e27]"
-              >
-                About
-              </a>
-              <a
-                href="#portfolio"
-                className="hover:text-[#df0139] transition-colors duration-300 font-medium text-[#1e1e27]"
-              >
-                Portfolio
-              </a>
-              <a
-                href="#services"
-                className="hover:text-[#df0139] transition-colors duration-300 font-medium text-[#1e1e27]"
-              >
-                Services
-              </a>
-              <a
-                href="#contact"
-                className="hover:text-[#df0139] transition-colors duration-300 font-medium text-[#1e1e27]"
-              >
-                Contact
-              </a>
-            </div>
-            <div className="flex items-center gap-3">
-              <Button className="hidden md:inline-flex bg-[#df0139] text-white hover:bg-[#df0139]/90 font-semibold px-6 py-2 rounded-full transition-all duration-300 hover:scale-105">
-                Book Now
-              </Button>
-              <button
-                className="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-md border border-[#e5e5e5] bg-white/70 backdrop-blur text-[#1e1e27]"
-                aria-label="Toggle Menu"
-                onClick={() => setIsMobileMenuOpen((v) => !v)}
-              >
-                {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-              </button>
-            </div>
-          </div>
-        </div>
-      </nav>
-      {isMobileMenuOpen && (
-        <div className="md:hidden fixed top-[64px] left-0 right-0 z-40 bg-white/95 backdrop-blur-md shadow-lg border-b border-[#e5e5e5]">
-          <div className="px-6 py-4 flex flex-col gap-3">
-            <a href="#home" onClick={() => setIsMobileMenuOpen(false)} className="py-2 text-[#1e1e27]">Home</a>
-            <a href="#about" onClick={() => setIsMobileMenuOpen(false)} className="py-2 text-[#1e1e27]">About</a>
-            <a href="#portfolio" onClick={() => setIsMobileMenuOpen(false)} className="py-2 text-[#1e1e27]">Portfolio</a>
-            <a href="#services" onClick={() => setIsMobileMenuOpen(false)} className="py-2 text-[#1e1e27]">Services</a>
-            <a href="#contact" onClick={() => setIsMobileMenuOpen(false)} className="py-2 text-[#1e1e27]">Contact</a>
-            <Button onClick={() => setIsMobileMenuOpen(false)} className="mt-2 bg-[#df0139] text-white hover:bg-[#df0139]/90">Book Now</Button>
-          </div>
-        </div>
-      )}
-
-      {/* Hero Section */}
-      <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-black/60 z-10"></div>
-        <video autoPlay muted loop className="absolute inset-0 w-full h-full object-cover">
-          <source src="/our%20studio.mp4" type="video/mp4" />
         </video>
         <div className="relative z-20 text-center max-w-4xl px-6">
           <h1 className="text-5xl md:text-8xl font-bold mb-6 animate-fade-in leading-tight text-white">
@@ -142,6 +72,77 @@ export default function StudioWebsite() {
             <span className="block text-[#df0139] drop-shadow-lg">EXTRAORDINARY</span>
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-white font-light">
+
+                {/* Contact Section */}
+                <section id="contact" className="py-20 px-6">
+                  <div className="max-w-7xl mx-auto">
+                    <h2 className="text-5xl font-bold text-center mb-12 text-[#1e1e27]">
+                      Get In <span className="text-[#df0139]">Touch</span>
+                    </h2>
+                    <div className="grid md:grid-cols-2 gap-12">
+                      <div>
+                        <h3 className="text-2xl font-bold mb-6 text-[#1e1e27]">Contact Information</h3>
+                        <div className="space-y-4">
+                          <div className="flex items-center space-x-4">
+                            <Phone className="text-[#df0139] w-6 h-6" />
+                            <span className="text-[#1e1e27]">(+251) 91 107 1357</span>
+                          </div>
+                          <div className="flex items-center space-x-4">
+                            <Mail className="text-[#df0139] w-6 h-6" />
+                            <span className="text-[#1e1e27]">lumeya.photography@gmail.com</span>
+                          </div>
+                          <div className="flex items-center space-x-4">
+                            <MapPin className="text-[#df0139] w-6 h-6" />
+                            <span className="text-[#1e1e27]">02 Duna Hayawu Menged, Worabe</span>
+                          </div>
+                        </div>
+                        <div className="mt-8">
+                          <h4 className="text-xl font-semibold mb-4 text-[#1e1e27]">Follow Us</h4>
+                          <div className="flex space-x-4">
+                            <Instagram className="text-[#df0139] w-6 h-6 cursor-pointer hover:text-[#df0139]/80 transition-colors" />
+                            <Facebook className="text-[#df0139] w-6 h-6 cursor-pointer hover:text-[#df0139]/80 transition-colors" />
+                            <Twitter className="text-[#df0139] w-6 h-6 cursor-pointer hover:text-[#df0139]/80 transition-colors" />
+                          </div>
+                        </div>
+                      </div>
+                      <Card className="bg-white border-[#df0139]/20 shadow-lg">
+                        <CardContent className="p-8">
+                          <form className="space-y-6">
+                            <div>
+                              <Input
+                                placeholder="Your Name"
+                                className="bg-[#e2e2e2]/30 border-[#28242a]/20 text-[#1e1e27] focus:border-[#df0139] transition-colors"
+                              />
+                            </div>
+                            <div>
+                              <Input
+                                type="email"
+                                placeholder="Your Email"
+                                className="bg-[#e2e2e2]/30 border-[#28242a]/20 text-[#1e1e27] focus:border-[#df0139] transition-colors"
+                              />
+                            </div>
+                            <div>
+                              <Input
+                                placeholder="Subject"
+                                className="bg-[#e2e2e2]/30 border-[#28242a]/20 text-[#1e1e27] focus:border-[#df0139] transition-colors"
+                              />
+                            </div>
+                            <div>
+                              <Textarea
+                                placeholder="Your Message"
+                                className="bg-[#e2e2e2]/30 border-[#28242a]/20 text-[#1e1e27] focus:border-[#df0139] transition-colors"
+                                rows={4}
+                              />
+                            </div>
+                            <Button className="w-full bg-[#df0139] text-white hover:bg-[#df0139]/90 rounded-full font-semibold transition-all duration-300 hover:scale-105">
+                              Send Message
+                            </Button>
+                          </form>
+                        </CardContent>
+                      </Card>
+                    </div>
+                  </div>
+                </section>
             Professional photography that tells your story with cinematic elegance
           </p>
           <Button
