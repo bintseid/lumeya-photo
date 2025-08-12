@@ -58,53 +58,139 @@ export default function StudioWebsite() {
   ]
 
   return (
-    <div className="min-h-screen bg-white text-[#1e1e27] flex flex-col">
-      {/* Navigation */}
-      <nav className="fixed top-0 w-full z-50 transition-all duration-300 bg-white/95 backdrop-blur-md shadow-lg">
-        <div className="max-w-7xl mx-auto px-6 py-4">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center">
-              <img
-        </video>
-        <div className="relative z-20 text-center max-w-4xl px-6">
-          <h1 className="text-5xl md:text-8xl font-bold mb-6 animate-fade-in leading-tight text-white">
-            CAPTURE THE
-            <span className="block text-[#df0139] drop-shadow-lg">EXTRAORDINARY</span>
-          </h1>
-          <p className="text-xl md:text-2xl mb-8 text-white font-light">
+  <div className="min-h-screen bg-white text-[#1e1e27] flex flex-col">
+    {/* Navigation */}
+    <nav className="fixed top-0 w-full z-50 transition-all duration-300 bg-white/95 backdrop-blur-md shadow-lg">
+      <div className="max-w-7xl mx-auto px-6 py-4">
+        <div className="flex items-center justify-between">
+          {/* ...existing code... */}
+        </div>
+      </div>
+    </nav>
+    {/* ...existing main content... */}
+                                      <div>
+                                        <Input
+                                          placeholder="Your Name"
+                                          className="bg-[#e2e2e2]/30 border-[#28242a]/20 text-[#1e1e27] focus:border-[#df0139] transition-colors"
+                                        />
+                                      </div>
+                                      <div>
+                                        <Input
+                                          type="email"
+                                          placeholder="Your Email"
+                                          className="bg-[#e2e2e2]/30 border-[#28242a]/20 text-[#1e1e27] focus:border-[#df0139] transition-colors"
+                                        />
+                                      </div>
+                                      <div>
+                                        <Input
+                                          placeholder="Subject"
+                                          className="bg-[#e2e2e2]/30 border-[#28242a]/20 text-[#1e1e27] focus:border-[#df0139] transition-colors"
+                                        />
+                                      </div>
+                                      <div>
+                                        <Textarea
+                                          placeholder="Your Message"
+                                          className="bg-[#e2e2e2]/30 border-[#28242a]/20 text-[#1e1e27] focus:border-[#df0139] transition-colors"
+                                          rows={4}
+                                        />
+                                      </div>
+                                      <Button className="w-full bg-[#df0139] text-white hover:bg-[#df0139]/90 rounded-full font-semibold transition-all duration-300 hover:scale-105">
+                                        Send Message
+                                      </Button>
+                                    </form>
+                                  </CardContent>
+                                </Card>
+                              </div>
+                            </div>
+                          </section>
 
-                {/* Contact Section */}
-                <section id="contact" className="py-20 px-6">
-                  <div className="max-w-7xl mx-auto">
-                    <h2 className="text-5xl font-bold text-center mb-12 text-[#1e1e27]">
-                      Get In <span className="text-[#df0139]">Touch</span>
-                    </h2>
-                    <div className="grid md:grid-cols-2 gap-12">
-                      <div>
-                        <h3 className="text-2xl font-bold mb-6 text-[#1e1e27]">Contact Information</h3>
-                        <div className="space-y-4">
-                          <div className="flex items-center space-x-4">
-                            <Phone className="text-[#df0139] w-6 h-6" />
-                            <span className="text-[#1e1e27]">(+251) 91 107 1357</span>
-                          </div>
-                          <div className="flex items-center space-x-4">
-                            <Mail className="text-[#df0139] w-6 h-6" />
-                            <span className="text-[#1e1e27]">lumeya.photography@gmail.com</span>
-                          </div>
-                          <div className="flex items-center space-x-4">
-                            <MapPin className="text-[#df0139] w-6 h-6" />
-                            <span className="text-[#1e1e27]">02 Duna Hayawu Menged, Worabe</span>
-                          </div>
+                          {/* Footer */}
+                          <footer className="mt-auto bg-[#e2e2e2]/50 border-t border-[#28242a]/20 py-8 px-6">
+                            <div className="max-w-7xl mx-auto text-center">
+                              <div className="text-2xl font-bold text-[#df0139] mb-4 tracking-wider">LUMEYA</div>
+                              <p className="text-[#28242a]/70">© 2025 Lumeya. All rights reserved.</p>
+                            </div>
+                          </footer>
+            <div className="relative">
+              <AspectRatio ratio={16 / 9}>
+                <video controls className="h-full w-full rounded-lg shadow-2xl object-cover" poster="/studio.jpg">
+                  <source src="/our%20studio.mp4" type="video/mp4" />
+                </video>
+              </AspectRatio>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Portfolio Section */}
+
+    {/* Contact Section */}
+    <section id="contact" className="py-20 px-6">
+      <div className="max-w-7xl mx-auto">
+        <h2 className="text-5xl font-bold text-center mb-12 text-[#1e1e27]">
+          Get In <span className="text-[#df0139]">Touch</span>
+        </h2>
+        <div className="grid md:grid-cols-2 gap-12">
+          <div>
+            <h3 className="text-2xl font-bold mb-6 text-[#1e1e27]">Contact Information</h3>
+            <div className="space-y-4">
+              <div className="flex items-center space-x-4">
+                <Phone className="text-[#df0139] w-6 h-6" />
+                <span className="text-[#1e1e27]">(+251) 91 107 1357</span>
+              </div>
+              <div className="flex items-center space-x-4">
+                <Mail className="text-[#df0139] w-6 h-6" />
+                <span className="text-[#1e1e27]">lumeya.photography@gmail.com</span>
+              </div>
+              <div className="flex items-center space-x-4">
+                <MapPin className="text-[#df0139] w-6 h-6" />
+                <span className="text-[#1e1e27]">02 Duna Hayawu Menged, Worabe</span>
+              </div>
+            </div>
+            <div className="mt-8">
+              <h4 className="text-xl font-semibold mb-4 text-[#1e1e27]">Follow Us</h4>
+              <div className="flex space-x-4">
+                <Instagram className="text-[#df0139] w-6 h-6 cursor-pointer hover:text-[#df0139]/80 transition-colors" />
+                <Facebook className="text-[#df0139] w-6 h-6 cursor-pointer hover:text-[#df0139]/80 transition-colors" />
+                <Twitter className="text-[#df0139] w-6 h-6 cursor-pointer hover:text-[#df0139]/80 transition-colors" />
+              </div>
+            </div>
+          </div>
+          <Card className="bg-white border-[#df0139]/20 shadow-lg">
+            <CardContent className="p-8">
+              {/* Contact Section */}
+              <section id="contact" className="py-20 px-6">
+                <div className="max-w-7xl mx-auto">
+                  <h2 className="text-5xl font-bold text-center mb-12 text-[#1e1e27]">
+                    Get In <span className="text-[#df0139]">Touch</span>
+                  </h2>
+                  <div className="grid md:grid-cols-2 gap-12">
+                    <div>
+                      <h3 className="text-2xl font-bold mb-6 text-[#1e1e27]">Contact Information</h3>
+                      <div className="space-y-4">
+                        <div className="flex items-center space-x-4">
+                          <Phone className="text-[#df0139] w-6 h-6" />
+                          <span className="text-[#1e1e27]">(+251) 91 107 1357</span>
                         </div>
-                        <div className="mt-8">
-                          <h4 className="text-xl font-semibold mb-4 text-[#1e1e27]">Follow Us</h4>
-                          <div className="flex space-x-4">
-                            <Instagram className="text-[#df0139] w-6 h-6 cursor-pointer hover:text-[#df0139]/80 transition-colors" />
-                            <Facebook className="text-[#df0139] w-6 h-6 cursor-pointer hover:text-[#df0139]/80 transition-colors" />
-                            <Twitter className="text-[#df0139] w-6 h-6 cursor-pointer hover:text-[#df0139]/80 transition-colors" />
-                          </div>
+                        <div className="flex items-center space-x-4">
+                          <Mail className="text-[#df0139] w-6 h-6" />
+                          <span className="text-[#1e1e27]">lumeya.photography@gmail.com</span>
+                        </div>
+                        <div className="flex items-center space-x-4">
+                          <MapPin className="text-[#df0139] w-6 h-6" />
+                          <span className="text-[#1e1e27]">02 Duna Hayawu Menged, Worabe</span>
                         </div>
                       </div>
+                      <div className="mt-8">
+                        <h4 className="text-xl font-semibold mb-4 text-[#1e1e27]">Follow Us</h4>
+                        <div className="flex space-x-4">
+                          <Instagram className="text-[#df0139] w-6 h-6 cursor-pointer hover:text-[#df0139]/80 transition-colors" />
+                          <Facebook className="text-[#df0139] w-6 h-6 cursor-pointer hover:text-[#df0139]/80 transition-colors" />
+                          <Twitter className="text-[#df0139] w-6 h-6 cursor-pointer hover:text-[#df0139]/80 transition-colors" />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
                       <Card className="bg-white border-[#df0139]/20 shadow-lg">
                         <CardContent className="p-8">
                           <form className="space-y-6">
@@ -142,61 +228,46 @@ export default function StudioWebsite() {
                       </Card>
                     </div>
                   </div>
-                </section>
-            Professional photography that tells your story with cinematic elegance
-          </p>
-          <Button
-            size="lg"
-            className="bg-[#df0139] text-white hover:bg-[#df0139]/90 text-lg px-10 py-4 rounded-full font-semibold transition-all duration-300 hover:scale-105 shadow-xl"
-          >
-            View Our Work
-          </Button>
-        </div>
-      </section>
+                </div>
+              </section>
 
-      {/* About Section */}
-      <section id="about" className="py-20 px-6">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-5xl font-bold mb-6 leading-tight text-[#1e1e27]">
-                About <span className="text-[#df0139]">Our Studio</span>
-              </h2>
-              <p className="text-lg text-[#28242a] mb-6 leading-relaxed">
-                With over a decade of experience in luxury photography, we specialize in creating timeless images that
-                capture the essence of life's most precious moments.
-              </p>
-              <p className="text-lg text-[#28242a] mb-8 leading-relaxed">
-                Our team combines technical expertise with artistic vision to deliver photographs that exceed
-                expectations and stand the test of time.
-              </p>
-              <div className="flex space-x-8">
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-[#df0139]">500+</div>
-                  <div className="text-[#28242a]/70">Happy Clients</div>
+              {/* Footer */}
+              <footer className="mt-0 bg-[#e2e2e2]/50 border-t border-[#28242a]/20 py-8 px-6">
+                <div className="max-w-7xl mx-auto text-center">
+                  <div className="text-2xl font-bold text-[#df0139] mb-4 tracking-wider">LUMEYA</div>
+                  <p className="text-[#28242a]/70">© 2025 Lumeya. All rights reserved.</p>
                 </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-[#df0139]">10+</div>
-                  <div className="text-[#28242a]/70">Years Experience</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-[#df0139]">50+</div>
-                  <div className="text-[#28242a]/70">Awards Won</div>
-                </div>
-              </div>
-            </div>
-            <div className="relative">
-              <AspectRatio ratio={16 / 9}>
-                <video controls className="h-full w-full rounded-lg shadow-2xl object-cover" poster="/studio.jpg">
-                  <source src="/our%20studio.mp4" type="video/mp4" />
-                </video>
-              </AspectRatio>
-            </div>
+              </footer>
+                  </div>
+                  <div>
+                    <Input
+                      type="email"
+                      placeholder="Your Email"
+                      className="bg-[#e2e2e2]/30 border-[#28242a]/20 text-[#1e1e27] focus:border-[#df0139] transition-colors"
+                    />
+                  </div>
+                  <div>
+                    <Input
+                      placeholder="Subject"
+                      className="bg-[#e2e2e2]/30 border-[#28242a]/20 text-[#1e1e27] focus:border-[#df0139] transition-colors"
+                    />
+                  </div>
+                  <div>
+                    <Textarea
+                      placeholder="Your Message"
+                      className="bg-[#e2e2e2]/30 border-[#28242a]/20 text-[#1e1e27] focus:border-[#df0139] transition-colors"
+                      rows={4}
+                    />
+                  </div>
+                  <Button className="w-full bg-[#df0139] text-white hover:bg-[#df0139]/90 rounded-full font-semibold transition-all duration-300 hover:scale-105">
+                    Send Message
+                  </Button>
+                </form>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
-
-      {/* Portfolio Section */}
       <section id="portfolio" className="py-20 px-6 bg-[#e2e2e2]/30">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-5xl font-bold text-center mb-12 text-[#1e1e27]">
@@ -464,13 +535,13 @@ export default function StudioWebsite() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="mt-auto bg-[#e2e2e2]/50 border-t border-[#28242a]/20 py-8 px-6">
-        <div className="max-w-7xl mx-auto text-center">
-          <div className="text-2xl font-bold text-[#df0139] mb-4 tracking-wider">LUMEYA</div>
-          <p className="text-[#28242a]/70">© 2025 Lumeya. All rights reserved.</p>
-        </div>
-      </footer>
+    {/* Footer */}
+    <footer className="mt-auto bg-[#e2e2e2]/50 border-t border-[#28242a]/20 py-8 px-6">
+      <div className="max-w-7xl mx-auto text-center">
+        <div className="text-2xl font-bold text-[#df0139] mb-4 tracking-wider">LUMEYA</div>
+        <p className="text-[#28242a]/70">© 2025 Lumeya. All rights reserved.</p>
+      </div>
+    </footer>
 
       {/* Image Modal */}
       {selectedImage && (
